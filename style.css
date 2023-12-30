@@ -1,0 +1,17 @@
+.logo-img {
+  width: 45px;
+}
+
+.logo-text {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+.logo-info {
+  background-color: #0d6efd;
+  color: white;
+  padding: 5px 8px 6px 8px;
+  border-radius: 5px;
+}
