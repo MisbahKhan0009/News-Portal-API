@@ -16,9 +16,22 @@
   border-radius: 5px;
 }
 
-
-.author-img{
+.card {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.author-img {
   height: 40px;
   width: 40px;
   border-radius: 75px;
+}
+
+.article-first::first-letter {
+  font-size: 3em; /* Adjust the size of the first letter */
+  font-weight: bold; /* Make the first letter bold if desired */
+  margin-right: 0.1em; /* Add some spacing to the right of the first letter */
+  float: left;
+  line-height: 1; /* Adjust the line height for better readability */
+    
+  
 }
