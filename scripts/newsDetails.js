@@ -50,7 +50,7 @@ const showNews = (news) => {
     <div class="d-flex justify-content-between mt-2">
       <div>
         <i class="fa-regular fa-eye"></i> ${
-          news.total_view ? news.total_view : "No Data Found"
+          data.total_view ? data.total_view : "No Data Found"
         }
       </div>
       <div class="">

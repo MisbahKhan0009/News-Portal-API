@@ -8,7 +8,7 @@ const loadNewsDetails = async (category_id) => {
 
 const showNewsDetails = (allNews, status) => {
   const newsContainer = document.getElementById("all-news");
-
+  let newsCount = 0;
   newsContainer.innerHTML = ``;
 
   // date converter starts
@@ -30,6 +30,7 @@ const showNewsDetails = (allNews, status) => {
   for (const news of allNews) {
     const newsDiv = document.createElement("div");
     console.log(news);
+    newsCount++;
 
     newsDiv.classList.add("card", "m-3", "w-75");
     newsDiv.innerHTML = `
@@ -93,11 +94,26 @@ const showNewsDetails = (allNews, status) => {
     `;
     newsContainer.appendChild(newsDiv);
   }
+
+  const counter = document.getElementById("news-count");
+  counter.innerHTML = ``;
+  const newsCountDiv = document.createElement("div");
+  newsCountDiv.classList.add("card", "container", "w-75");
+
+  newsCountDiv.innerHTML = `
+  <div class="card-body text-center">
+    ${newsCount} news found in this category.
+  </div>
+  `;
+  counter.appendChild(newsCountDiv);
 };
 
 function getNewsIds(newsId) {
   const newsHeading = document.getElementById("all-news");
   newsHeading.classList.add("d-none");
+
+  const counter = document.getElementById("news-count");
+  counter.classList.add("d-none");
 
   const noNews = document.getElementById("no-news");
   noNews.classList.add("d-none");
