@@ -47,7 +47,193 @@
       <!-- Navbar Ended -->
     </header>
 
-    <main></main>
+    <main
+      class="container w-75"
+      style="text-align: justify; text-justify: inter-word"
+    >
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              What is the difference between var, let and const?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+          >
+            <div class="accordion-body">
+              In JavaScript, `var`, `let`, and `const` are used to declare
+              variables, but they differ in terms of scope, hoisting, and
+              mutability. `var` is function-scoped and is hoisted to the top of
+              its function, meaning it can be accessed before it's declared in
+              the code. However, it has some issues like creating implicit
+              global variables when declared outside of a function block. This
+              can lead to unintended variable reassignments and make code harder
+              to maintain. `let` was introduced in ECMAScript 6 (ES6) to address
+              some of the shortcomings of `var`. It has block-level scope,
+              making it more predictable and less prone to unintended side
+              effects. `let` variables are hoisted to the top of their block,
+              but they are not initialized until the actual declaration is
+              encountered in the code. `const` is similar to `let` in terms of
+              block-level scope, but it has the added characteristic of being a
+              constant, meaning its value cannot be reassigned after
+              declaration. This makes `const` suitable for variables that should
+              remain constant throughout their lifecycle. It is important to
+              note that while the value of a `const` variable is immutable, its
+              properties can still be modified if it is an object or an array.
+              In summary, `var` is function-scoped, `let` is block-scoped and
+              allows reassignment, and `const` is block-scoped and used for
+              variables with constant values. Choosing the appropriate keyword
+              depends on the desired scope and mutability of the variable in
+              your JavaScript code.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              What is the difference arrow function and normal function?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              In JavaScript, arrow functions and normal (or traditional)
+              functions serve the same purpose of defining functions, but they
+              differ in terms of syntax, behavior, and handling of the `this`
+              keyword. Arrow functions were introduced in ECMAScript 6 (ES6) and
+              offer a more concise syntax compared to traditional functions. The
+              syntax allows for omitting the `function` keyword, curly braces
+              (for single expressions), and automatically binds the `this` value
+              to the enclosing context. Arrow functions are especially useful
+              for short, simple functions where brevity is a priority. On the
+              other hand, traditional functions have a more verbose syntax,
+              requiring the use of the `function` keyword and explicit curly
+              braces for code blocks. Traditional functions also have their own
+              `this` context, which can be dynamically determined based on how
+              the function is called. This dynamic behavior of `this` in
+              traditional functions can sometimes lead to unexpected results,
+              especially in nested or callback scenarios. One notable difference
+              is that arrow functions do not have their own `this` context;
+              instead, they inherit it from the surrounding scope. This can be
+              advantageous in certain situations, providing a more intuitive way
+              to capture the expected `this` value. However, it's essential to
+              be cautious when using arrow functions in cases where dynamic
+              `this` scoping is required, such as in methods or constructors. In
+              summary, arrow functions offer a concise syntax and lexically
+              scoped `this`, making them suitable for simpler functions, while
+              traditional functions provide more flexibility in terms of dynamic
+              `this` scoping and are often preferred in more complex scenarios
+              or when working with object-oriented patterns. The choice between
+              them depends on the specific requirements and characteristics of
+              the code you are writing.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Difference between map, foreach, filter, find?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              In JavaScript, the array methods `forEach`, `map`, `filter`, and
+              `find` serve distinct purposes in manipulating and processing
+              arrays. The `forEach` method is employed for iterating through
+              each element of an array, executing a provided function for each
+              iteration. It does not create a new array but rather mutates the
+              existing one in place. Conversely, the `map` method is used to
+              generate a new array by applying a specified function to each
+              element of the original array. It is particularly useful for
+              transforming array elements based on a defined operation. The
+              `filter` method, on the other hand, creates a new array containing
+              only those elements that meet a specified condition. It
+              facilitates the creation of a subset of the original array based
+              on a given criteria. In contrast, the `find` method is designed to
+              return the first element in the array that satisfies a specified
+              condition. If no such element is found, it returns `undefined`.
+              This method is valuable for locating and retrieving a specific
+              element that meets a given criterion. In summary, `forEach`
+              facilitates iteration without creating a new array, `map`
+              transforms each element to construct a new array, `filter`
+              generates a new array containing only elements meeting a specified
+              condition, and `find` identifies and returns the first element
+              that satisfies a given criterion. These methods offer diverse and
+              efficient ways to manipulate arrays in JavaScript, catering to a
+              range of programming needs.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              Why should we use template string?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              Template strings, also known as template literals, offer several
+              advantages over traditional string concatenation methods in
+              JavaScript. One compelling reason to use template strings is their
+              conciseness and readability. By employing the `${}` syntax,
+              variables or expressions can be seamlessly embedded within a
+              string, leading to cleaner and more straightforward code. This
+              syntax significantly improves code readability, making it easier
+              to understand and maintain. Furthermore, template strings
+              facilitate the creation of multiline strings without the need for
+              escape characters, enhancing code readability and making it more
+              natural. This is particularly beneficial when dealing with lengthy
+              or formatted text. Additionally, template strings allow for the
+              direct evaluation of expressions within the string, enabling the
+              inclusion of dynamic values or the result of calculations. This
+              capability proves valuable when constructing strings based on
+              varying conditions or complex operations. In summary, template
+              strings offer a more elegant and expressive way to work with
+              strings in JavaScript, improving code readability,
+              maintainability, and the overall developer experience.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- footer starts -->
     <section class="bg-dark-subtle mt-5">
